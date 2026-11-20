@@ -1,169 +1,120 @@
-/* Prevent horizontal overflow */
+:root {
+  --bs-body-font-family: "Poppins", system-ui, sans-serif;
+  --svp-navy: #142143;
+  --svp-mid: #17afe0;
+  --svp-pink: #e81552;
+  --svp-light: #cae7f9;
+  --svp-white: #ffffff;
+  color-scheme: dark;
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Ensures padding and borders don't affect the width */
+  box-sizing: border-box;
 }
 
-/* Ensure body and html don't exceed 100% width */
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-  position: relative;
+html,
+body {
+  background-color: var(--svp-navy);
+  color: var(--svp-white);
 }
 
-/* By adding .App, this selector is more specific than Bootstrap's default */
-.App, .App button, .App .btn {
-  font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 
-/* Apply Poppins font for headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;  /* Headings with Poppins */
-  font-weight: 700;  /* Bold weight for headings */
-}
-
-/* Apply Dancing Script for festive touch */
-.festive-text {
-  font-family: 'Dancing Script', cursive;
-}
-
-/* --- BORDERS & MAIN CONTENT --- */
-
-.left-bg, .right-bg {
-  position: fixed;
-  height: 100vh;
-  z-index: 100;
-  object-fit: cover;
-  
-  /* Base size (for screens > 1200px) */
-  width: 180px; 
-}
-
-.left-bg {
-  left: 0;
-  top: 0;
-}
-
-.right-bg {
-  right: 0;
-  top: 0;
+.App {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(23, 175, 224, 0.22), transparent 55%),
+    radial-gradient(ellipse at 80% 120%, rgba(232, 21, 82, 0.12), transparent 50%),
+    var(--svp-navy);
 }
 
 .main-content-wrapper {
-  max-width: 1500px;
+  max-width: 1100px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
-  background-image: linear-gradient(90deg,
-      rgba(202, 231, 249, 0.8) 20%,
-      #ffffff 40%,
-      #ffffff 60%,
-      rgba(202, 231, 249, 0.8) 80%);
-  
-  /* 💥 Base padding: 180px (border) + 15px (buffer) = 195px */
-  padding: 5px 195px;
+  padding: 16px 20px 40px;
 }
 
-/* --- RESPONSIVE BORDERS & PADDING --- */
-
-/* For medium screens (e.g., tablets) */
-@media (max-width: 1200px) {
-  .left-bg, .right-bg {
-    width: 80px; /* Shrink border */
-  }
-
-  .main-content-wrapper {
-    /* 💥 Fix: 100px (border) + 15px (buffer) = 115px */
-    padding: 0 115px; 
-  }
-}
-
-/* For small screens (e.g., mobile) */
-@media (max-width: 768px) {
-  .left-bg, .right-bg {
-    width: 40px; /* Further shrink border */
-  }
-
-  .main-content-wrapper {
-    /* 💥 Fix: 40px (border) + 15px (buffer) = 55px */
-    padding: 0 55px; 
-  }
-}
-
-/* For very small screens (hides borders) */
-@media (max-width: 417px) {
-  .left-bg, .right-bg {
-    display: none; /* Hide borders */
-  }
-
-  .main-content-wrapper {
-    /* Borders are gone, so use small padding */
-    padding: 0 25px; 
-  }
-
-  .title-container {
-    gap: 2px;
-  }
-}
- 
-/* Flex container to center everything */
 .title-container {
-  display: flex;                  /* Make it a flex container */
-  justify-content: center;        /* Centers the content horizontally */
-  align-items: center;            /* Vertically align items */
-  gap: 5px;                      /* Space between emojis and title */
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+  margin: 8px 0 4px;
 }
 
-/* Emoji styling */
-.left-tree-emoji, .right-tree-emoji {
-  font-size: 3rem;                /* Adjust font size of the emoji */
-  width: 35px;                    /* Set width to keep them aligned with title */
-  height: auto;                   /* Maintain aspect ratio */
-  transform: translateY(-6px);  /* Slightly adjust vertical position */
+.campaign-kicker {
+  margin: 0;
+  color: var(--svp-mid);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
-/* Container for the donate button */
+.title-container h1.title {
+  margin: 0;
+  color: var(--svp-white);
+  font-size: clamp(1.35rem, 3vw, 2.15rem);
+  line-height: 1.25;
+  max-width: 18ch;
+}
+
 .donate-container {
-  text-align: center;  /* Center the button */
-  margin-top: 30px;  /* Space between Advent Calendar and the donate button */
-  margin-bottom: 20px; /* Space below the donate button */
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 12px;
 }
 
-/* Style for the donate button */
 .donate-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #e81552;  /* Red background color */
-  color: #f9d342;  /* Gold text */
-  padding: 10px 20px;
-  font-size: 1.1rem;  /* Adjust font size */
-  font-weight: bold;  /* Make the text bold */
-  text-decoration: none;  /* Remove underline */
-  border-radius: 25px;  /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Optional: subtle shadow */
-  transition: background-color 0.3s ease, transform 0.3s ease;  /* Smooth transition */
-  text-transform: uppercase; /* Make text uppercase */
+  background-color: var(--svp-pink);
+  color: var(--svp-white);
+  padding: 12px 28px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 999px;
+  box-shadow: 0 0 24px rgba(232, 21, 82, 0.35);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.donate-button:hover {
-  background-color: #17afe0; /* Change to blue on hover */
-  transform: scale(1.05); /* Slightly increase size on hover */
+@media (hover: hover) {
+  .donate-button:hover {
+    background-color: var(--svp-mid);
+    color: var(--svp-navy);
+    transform: scale(1.04);
+    box-shadow: 0 0 28px rgba(202, 231, 249, 0.45);
+  }
 }
 
-/* Add spacing around the stars */
-.donate-icon {
-  margin: 0 2px; /* Space between the stars and the text */
+.donate-button:focus-visible {
+  background-color: var(--svp-mid);
+  color: var(--svp-navy);
+  outline: 3px solid var(--svp-white);
+  outline-offset: 4px;
 }
 
-@media (max-width: 520px) {
-  .title-container h1.title {
-    /* 1. Force the h1 element to be narrow, which makes it wrap */
-    max-width: 200px; /* Adjust this value to fine-tune the wrap point */
+@media (prefers-reduced-motion: reduce) {
+  .donate-button {
+    transition: none;
+  }
 
-    /* 2. Center the text ("Calendar") under the first line ("2025 Advent") */
-    text-align: center;
+  .donate-button:hover {
+    transform: none;
   }
 }
