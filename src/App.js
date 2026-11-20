@@ -1,48 +1,35 @@
-import React from "react";
 import AdventCalendar from "./components/AdventCalendar";
 import Logos from "./components/Logos";
-import Snowflakes from "./components/Snowflakes";
-import leftBG from "./assets/images/left-bg.jpg"; // Importing left background image
-import rightBG from "./assets/images/right-bg.jpg"; // Importing right background image
-import emoji from "./assets/images/tree.png"; // Importing a tree emoji image
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons"; // Import the star icon
+import NightSky from "./components/NightSky";
+import { CAMPAIGN_YEAR } from "../src/config";
 
 import "./App.css";
+
+const DONATE_URL = `https://fundraising.svp.org.uk/page/173912/donate/1?ea.tracking.id=calendar${CAMPAIGN_YEAR}`;
 
 function App() {
   return (
     <div className="App">
-      {/* Background images */}
-      <img src={leftBG} alt="" className="left-bg" />
-      <img src={rightBG} alt="" className="right-bg" />
-      <div className="main-content-wrapper pt-1 pb-1">
-        {/* Snowflakes component */}
-        <Snowflakes />
-        {/* Logo section */}
+      <NightSky />
+      <main className="main-content-wrapper">
         <Logos />
-        {/* Title section */}
-        <div className="title-container mt-2">
-          <img src={emoji} alt="" className="left-tree-emoji" />
-          <h1 className="title fw-bold text-center">2025 Advent Calendar</h1>
-          <img src={emoji} alt="" className="right-tree-emoji" />
-        </div>
-        {/* Advent calendar main section */}
+        <header className="title-container">
+          <p className="campaign-kicker">Advent {CAMPAIGN_YEAR}</p>
+          <h1 className="title">Bring Light to Life's Darker Moments</h1>
+        </header>
         <AdventCalendar />
-        {/* Donate button link */}
         <div className="donate-container">
           <a
-            href="https://fundraising.svp.org.uk/page/173912/donate/1?ea.tracking.id=calendar"
-            target="_blank" // Opens the link in a new tab
-            rel="noopener noreferrer" // For security
+            href={DONATE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="donate-button"
           >
-            <FontAwesomeIcon icon={faStar} className="donate-icon" />
-            Donate Here
-            <FontAwesomeIcon icon={faStar} className="donate-icon" />
+            Bring light
+            <span className="visually-hidden"> (donate to SVP, opens in new tab)</span>
           </a>
         </div>
-      </div>
+      </main>
     </div>
   );
 }

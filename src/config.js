@@ -1,0 +1,1 @@
+export const CAMPAIGN_YEAR = 2026;
