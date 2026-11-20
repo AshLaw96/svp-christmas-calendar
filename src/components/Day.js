@@ -1,37 +1,51 @@
-import React from "react";
-import { Card } from "react-bootstrap";
-import doorImage from "../assets/images/door.jpg";
 import "../styles/Day.css";
 
-const Day = ({ day, content, isOpened, onClick, isLocked, currentDate }) => {
-  return (
-    <Card
-      className={`day ${isOpened ? "opened" : ""} ${
-        day === 25 ? "day-25" : ""
-      } ${isLocked ? "locked" : ""}
-      ${currentDate === day ? "is-today" : ""}
-      `}
-      onClick={!isLocked ? onClick : undefined}
-      aria-label={isLocked ? "This door is locked" : `Day ${day}`}
-      style={{
-        backgroundImage:
-          day === 25 ? "none" : isOpened ? "none" : `url(${doorImage})`,
-        cursor: isLocked ? "not-allowed" : "pointer", // Disable pointer events if the door is locked
-      }}
-    >
-      <Card.Body className="d-flex justify-content-center align-items-center">
-        <Card.Title
-          className={`day-number festive-text p-2 ${
-            day === 25 ? "day-25" : ""
-          }`}
-        >
-          {day}
-        </Card.Title>
-      </Card.Body>
+const Day = ({ day, content, isOpened, onClick, isLocked, isToday }) => {
+  const photo = isOpened && content?.mediaUrl ? content.mediaUrl : null;
 
-      {/* Show locked overlay if the door is locked */}
-      {isLocked && <div className="locked-overlay">Locked</div>}
-    </Card>
+  const labelParts = [`Day ${day}`];
+  if (isLocked) labelParts.push(`locked until ${day} December`);
+  else if (!isOpened) labelParts.push("ready to open");
+  if (isToday) labelParts.push("today's window");
+  if (isOpened) labelParts.push("opened");
+  const label = labelParts.join(", ");
+
+  const className = [
+    "window-door",
+    isOpened && "opened",
+    day === 25 && "day-25",
+    isLocked && "locked",
+    isToday && "is-today",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  return (
+    <button
+      type="button"
+      className={className}
+      onClick={onClick}
+      aria-label={label}
+    >
+      {photo && (
+        <span
+          className="window-photo"
+          style={{ backgroundImage: `url(${photo})` }}
+          aria-hidden="true"
+        />
+      )}
+      <span className="window-muntins" aria-hidden="true" />
+      <span className="day-number">{day}</span>
+      {(isLocked || !isOpened) && (
+        <span
+          className={`door-label ${isLocked ? "is-dark" : "is-light"}`}
+          aria-hidden="true"
+        >
+          {isLocked ? "Dark" : "Light"}
+        </span>
+      )}
+      <span className="window-sill" aria-hidden="true" />
+    </button>
   );
 };
 
