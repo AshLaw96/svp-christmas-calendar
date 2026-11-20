@@ -2,7 +2,7 @@ import day1Image from "../assets/images/1st.png";
 import day2Image from "../assets/images/2nd.png";
 import day3Image from "../assets/images/3rd.jpg";
 import day4Image from "../assets/images/4th.png";
-import day5Image from "../assets/images/5th.png";
+import day5Image from "../assets/images/5th.jpg";
 import day6Image from "../assets/images/6th.png";
 import day7Image from "../assets/images/7th.jpg";
 import day8Image from "../assets/images/8th.png";
