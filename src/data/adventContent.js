@@ -14,15 +14,15 @@ import day13Image from "../assets/images/13th.webp";
 import day14Image from "../assets/images/14th.jpg";
 import day15Image from "../assets/images/15th.png";
 import day16Image from "../assets/images/16th.webp";
-// import day17Image from "../assets/images/southend.jpg";
-// import day18Image from "../assets/images/wirral-calendar.jpg";
-// import day19Image from "../assets/images/pontypridd.jpg";
-// import day20Image from "../assets/images/shop.jpg";
-// import day21Image from "../assets/images/call-to-action.png";
-// import day22Image from "../assets/images/percent-76.png";
-// import day23Image from "../assets/images/26th.png";
-// import day24Image from "../assets/images/24th.png";
-// import day25Image from "../assets/images/25th.png";
+import day17Image from "../assets/images/17th.webp";
+import day18Image from "../assets/images/18th.webp";
+import day19Image from "../assets/images/19th.webp";
+import day20Image from "../assets/images/20th.webp";
+import day21Image from "../assets/images/21st.webp";
+import day22Image from "../assets/images/22nd.webp";
+import day23Image from "../assets/images/23rd.webp";
+import day24Image from "../assets/images/24th.webp";
+import day25Image from "../assets/images/25th.webp";
 
 const adventContent = [
   {
@@ -209,7 +209,7 @@ const adventContent = [
     content:
       "From opportunities to improve wellbeing to activities that bring people together, St Vincent's Ely helps people build confidence, develop connections and feel supported. It's about more than meeting immediate needs - it's about helping people move forward.",
     mediaType: "image",
-    // mediaUrl: day17Image,
+    mediaUrl: day17Image,
     linkUrl: 
       "https://svp.org.uk/microsite/st-vincents-ely-bridge",
     linkText: "Learn more about the Centre here",
@@ -220,7 +220,7 @@ const adventContent = [
     content:
       "For people experiencing homelessness, winter can be an especially difficult time. Through practical assistance, friendship and support, SVP members help people facing some of life's toughest challenges. Everyone deserves to feel valued, supported and treated with dignity.",
     mediaType: "image",
-    // mediaUrl: day18Image,
+    mediaUrl: day18Image,
     linkUrl: 
       "https://svp.org.uk/bringing-light-lifes-darker-moments",
     linkText: "Donate Here",
@@ -231,7 +231,7 @@ const adventContent = [
     content:
       "St Vincent's Southend creates opportunities for people to improve their wellbeing, build friendships and discover new skills. Through community activities and supportive programmes, people can find encouragement and a sense of belonging.",
     mediaType: "image",
-    // mediaUrl: day19Image,
+    mediaUrl: day19Image,
     linkUrl: 
       "https://svp.org.uk/st-vincents-southend",
     linkText: "Learn more about the Centre here",
@@ -243,7 +243,7 @@ const adventContent = [
     content:
       "As we light the fourth Advent candle, Christmas draws closer. This is a time to reflect on love, faith and the importance of being there for one another. May we carry these values into our homes, communities and the lives of those who need us.",
     mediaType: "image",
-    // mediaUrl: day20Image,
+    mediaUrl: day20Image,
     linkUrl: 
       "https://svp.org.uk/bringing-light-lifes-darker-moments",
     linkText: "Donate Here",
@@ -255,7 +255,7 @@ const adventContent = [
     content:
       "Across our communities, St Vincent's services help people access support, friendship and practical assistance when they need it most. Every person deserves to feel valued, included and supported.",
     mediaType: "image",
-    // mediaUrl: day21Image,
+    mediaUrl: day21Image,
     linkUrl:
       "https://svp.org.uk/microsite/st-vincents-wirral",
     linkText: "Learn more about the Centre here",
@@ -267,7 +267,7 @@ const adventContent = [
     content:
       "Growing older shouldn't mean growing lonely. At Tower House in Brighton, older people can come together, enjoy companionship and share a meal. Sometimes, a friendly face and somewhere to belong can make all the difference.",
     mediaType: "image",
-    // mediaUrl: day22Image,
+    mediaUrl: day22Image,
     linkUrl:
       "https://svp.org.uk/st-vincents-centre-brighton-tower-house",
     linkText: "Learn more about the Centre here",
@@ -278,7 +278,7 @@ const adventContent = [
     content:
       "The true spirit of Christmas isn't found in the presents beneath the tree. It's found in the kindness we share, the people we remember and the difference we make in one another's lives. Let's make room for generosity this Christmas.",
     mediaType: "image",
-    // mediaUrl: day23Image,
+    mediaUrl: day23Image,
     linkUrl:
       "https://svp.org.uk/bringing-light-lifes-darker-moments",
     linkText: "Donate Here",
@@ -289,7 +289,7 @@ const adventContent = [
     content:
       "Tonight, as many prepare to celebrate, let's remember those who may be facing loneliness, hardship or uncertainty. Through kindness, compassion and the gift of being there for one another, we can bring light to life's darker moments.",
     mediaType: "image",
-    // mediaUrl: day24Image,
+    mediaUrl: day24Image,
     linkUrl: 
       "https://svp.org.uk/bringing-light-lifes-darker-moments",
     linkText: "Donate Here"
@@ -300,7 +300,7 @@ const adventContent = [
     content:
       "Today, we celebrate the birth of Jesus Christ and the message of love, peace and hope at the heart of Christmas. We give thanks to everyone who makes the work of the SVP possible, bringing friendship, practical support and compassion to people across England and Wales. From everyone at the SVP, we wish you and your loved ones a very Merry Christmas.",
     mediaType: "image",
-    // mediaUrl: day25Image,
+    mediaUrl: day25Image,
   },
 ];
 

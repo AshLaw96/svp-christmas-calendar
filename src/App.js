@@ -5,7 +5,7 @@ import { CAMPAIGN_YEAR } from "../src/config";
 
 import "./App.css";
 
-const DONATE_URL = `https://fundraising.svp.org.uk/page/173912/donate/1?ea.tracking.id=calendar${CAMPAIGN_YEAR}`;
+const DONATE_URL = `https://svp.org.uk/bringing-light-lifes-darker-moments?ea.tracking.id=calendar${CAMPAIGN_YEAR}`;
 
 function App() {
   return (
