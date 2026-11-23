@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/svp-christmas-calendar/static/css/main.cab8c6e2.css",
-    "main.js": "/svp-christmas-calendar/static/js/main.b28e2e8c.js",
+    "main.js": "/svp-christmas-calendar/static/js/main.4f3f81d2.js",
     "static/media/8th.png": "/svp-christmas-calendar/static/media/8th.8fa82c9e1810cbd63bb4.png",
     "static/media/9th.webp": "/svp-christmas-calendar/static/media/9th.45380765fb733b781df5.webp",
     "static/media/14th.jpg": "/svp-christmas-calendar/static/media/14th.11cda49c10077bda48ee.jpg",
@@ -11,21 +11,30 @@
     "static/media/1st.png": "/svp-christmas-calendar/static/media/1st.7fc2f7a9a0ffb9c0516b.png",
     "static/media/12th.webp": "/svp-christmas-calendar/static/media/12th.e97678018bdd8612004d.webp",
     "static/media/10th.jpg": "/svp-christmas-calendar/static/media/10th.5d16a7296822489f708c.jpg",
+    "static/media/23rd.webp": "/svp-christmas-calendar/static/media/23rd.34722438962b46888e1e.webp",
     "static/media/4th.webp": "/svp-christmas-calendar/static/media/4th.2756768217f19fd29ead.webp",
     "static/media/13th.webp": "/svp-christmas-calendar/static/media/13th.9c49b98f435defdb2bde.webp",
     "static/media/2nd.png": "/svp-christmas-calendar/static/media/2nd.bbeed708ad7df91d7d49.png",
+    "static/media/21st.webp": "/svp-christmas-calendar/static/media/21st.f2c05e09db7bcf653ffb.webp",
+    "static/media/20th.webp": "/svp-christmas-calendar/static/media/20th.64fbb54f051e0f0a6c20.webp",
     "static/media/5th.png": "/svp-christmas-calendar/static/media/5th.44697a21454f1cd76ffe.png",
+    "static/media/19th.webp": "/svp-christmas-calendar/static/media/19th.6b9bab5eff514ac26df0.webp",
+    "static/media/18th.webp": "/svp-christmas-calendar/static/media/18th.fc7e7484d50ef5566783.webp",
     "static/media/6th.png": "/svp-christmas-calendar/static/media/6th.c033f84402907dacfdff.png",
+    "static/media/24th.webp": "/svp-christmas-calendar/static/media/24th.aa9a437346d750883465.webp",
     "static/media/3rd.jpg": "/svp-christmas-calendar/static/media/3rd.d8c00dece6375690c2ef.jpg",
+    "static/media/17th.webp": "/svp-christmas-calendar/static/media/17th.d9c906221398d6d87e95.webp",
     "static/media/11th.png": "/svp-christmas-calendar/static/media/11th.9a5e00d762853d322c94.png",
+    "static/media/25th.webp": "/svp-christmas-calendar/static/media/25th.d926051148e525a506bd.webp",
+    "static/media/22nd.webp": "/svp-christmas-calendar/static/media/22nd.04929e38473fec19a35b.webp",
     "static/media/title-logo.png": "/svp-christmas-calendar/static/media/title-logo.91a8df2b94797166f957.png",
     "static/media/svp-logo.webp": "/svp-christmas-calendar/static/media/svp-logo.a66ec1a1afefe0c570d6.webp",
     "index.html": "/svp-christmas-calendar/index.html",
     "main.cab8c6e2.css.map": "/svp-christmas-calendar/static/css/main.cab8c6e2.css.map",
-    "main.b28e2e8c.js.map": "/svp-christmas-calendar/static/js/main.b28e2e8c.js.map"
+    "main.4f3f81d2.js.map": "/svp-christmas-calendar/static/js/main.4f3f81d2.js.map"
   },
   "entrypoints": [
     "static/css/main.cab8c6e2.css",
-    "static/js/main.b28e2e8c.js"
+    "static/js/main.4f3f81d2.js"
   ]
 }
