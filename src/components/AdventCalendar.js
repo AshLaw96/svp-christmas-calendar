@@ -7,13 +7,19 @@ import "../styles/Modal.css";
 
 const STORAGE_KEY = `advent-opened-${CAMPAIGN_YEAR}`;
 
-const getAvailableDay = (now = new Date()) => {
-  const preview = Number(
-    new URLSearchParams(window.location.search).get("previewDay")
+export const getAvailableDay = (now = new Date()) => {
+  const previewParam = new URLSearchParams(window.location.search).get(
+    "previewDay"
   );
-  if (Number.isInteger(preview) && preview >= 0 && preview <= 25) {
-    return preview;
+  if (previewParam) {
+    const preview = Number(previewParam);
+    if (
+      Number.isInteger(preview) && preview >= 0 && preview <= 25
+    ) {
+      return preview;
+    } 
   }
+
   const year = now.getFullYear();
   if (year < CAMPAIGN_YEAR || (year === CAMPAIGN_YEAR && now.getMonth() < 11)) {
     return 0;
