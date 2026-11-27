@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/svp-christmas-calendar/static/css/main.cab8c6e2.css",
-    "main.js": "/svp-christmas-calendar/static/js/main.4f3f81d2.js",
+    "main.js": "/svp-christmas-calendar/static/js/main.4079accd.js",
     "static/media/8th.png": "/svp-christmas-calendar/static/media/8th.8fa82c9e1810cbd63bb4.png",
     "static/media/9th.webp": "/svp-christmas-calendar/static/media/9th.45380765fb733b781df5.webp",
     "static/media/14th.jpg": "/svp-christmas-calendar/static/media/14th.11cda49c10077bda48ee.jpg",
@@ -31,10 +31,10 @@
     "static/media/svp-logo.webp": "/svp-christmas-calendar/static/media/svp-logo.a66ec1a1afefe0c570d6.webp",
     "index.html": "/svp-christmas-calendar/index.html",
     "main.cab8c6e2.css.map": "/svp-christmas-calendar/static/css/main.cab8c6e2.css.map",
-    "main.4f3f81d2.js.map": "/svp-christmas-calendar/static/js/main.4f3f81d2.js.map"
+    "main.4079accd.js.map": "/svp-christmas-calendar/static/js/main.4079accd.js.map"
   },
   "entrypoints": [
     "static/css/main.cab8c6e2.css",
-    "static/js/main.4f3f81d2.js"
+    "static/js/main.4079accd.js"
   ]
 }
