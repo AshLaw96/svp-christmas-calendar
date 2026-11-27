@@ -93,8 +93,6 @@ const adventContent = [
       "St Nicholas is remembered for his generosity, compassion and care for people in need. His example continues to inspire the work of the SVP today. This Advent, let's follow in his footsteps by sharing what we can and looking out for those around us.",
     mediaType: "image",
     mediaUrl: day6Image,
-    linkUrl: "",
-    linkText: "",
   },
   {
     date: 7,
@@ -115,8 +113,6 @@ const adventContent = [
       "Today, the Catholic Church celebrates the Solemnity of the Immaculate Conception of the Blessed Virgin Mary. As we continue our Advent journey, may Mary's example of faith, humility and love inspire us to show compassion and care to those around us.",
     mediaType: "image",
     mediaUrl: day8Image,
-    linkUrl: "",
-    linkText: "",
   },
   {
     date: 9,
