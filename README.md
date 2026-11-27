@@ -4,7 +4,7 @@ An online advent calendar for the St Vincent de Paul Society (England and Wales)
 
 **Live site:** https://ashlaw96.github.io/svp-christmas-calendar/
 
-![Screenshot of the advent calendar](docs/screenshot.png)
+![Screenshot of the advent calendar](docs/advent-screenshot.png)
 
 ## Features
 
@@ -99,5 +99,5 @@ src/
 
 ## Credits
 
-Built by [AshleyL](https://github.com/AshLaw96). Campaign content, logos and images belong to the St Vincent de Paul Society (England and Wales).
+Built by [Ashley L](https://github.com/AshLaw96). Campaign content, logos and images belong to the St Vincent de Paul Society (England and Wales).
 Many thanks to [Megan](https://www.linkedin.com/in/megan-lawrence-27431119b/) Communications & Digital Content Manager for the SVP for sending all the content through helping me make this.
