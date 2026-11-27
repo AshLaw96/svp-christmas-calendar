@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/svp-christmas-calendar/static/css/main.cab8c6e2.css",
-    "main.js": "/svp-christmas-calendar/static/js/main.759ee575.js",
+    "main.js": "/svp-christmas-calendar/static/js/main.fcbe861f.js",
     "static/media/8th.png": "/svp-christmas-calendar/static/media/8th.8fa82c9e1810cbd63bb4.png",
     "static/media/9th.webp": "/svp-christmas-calendar/static/media/9th.45380765fb733b781df5.webp",
+    "static/media/2nd.webp": "/svp-christmas-calendar/static/media/2nd.8802373431992e87c57d.webp",
     "static/media/14th.jpg": "/svp-christmas-calendar/static/media/14th.11cda49c10077bda48ee.jpg",
     "static/media/7th.jpg": "/svp-christmas-calendar/static/media/7th.06c748a2b0cfaa6c9a5f.jpg",
     "static/media/15th.png": "/svp-christmas-calendar/static/media/15th.d57a2c23a0b1335e451c.png",
@@ -14,7 +15,6 @@
     "static/media/23rd.webp": "/svp-christmas-calendar/static/media/23rd.34722438962b46888e1e.webp",
     "static/media/4th.webp": "/svp-christmas-calendar/static/media/4th.2756768217f19fd29ead.webp",
     "static/media/13th.webp": "/svp-christmas-calendar/static/media/13th.9c49b98f435defdb2bde.webp",
-    "static/media/2nd.png": "/svp-christmas-calendar/static/media/2nd.bbeed708ad7df91d7d49.png",
     "static/media/21st.webp": "/svp-christmas-calendar/static/media/21st.f2c05e09db7bcf653ffb.webp",
     "static/media/20th.webp": "/svp-christmas-calendar/static/media/20th.64fbb54f051e0f0a6c20.webp",
     "static/media/5th.png": "/svp-christmas-calendar/static/media/5th.44697a21454f1cd76ffe.png",
@@ -31,10 +31,10 @@
     "static/media/svp-logo.webp": "/svp-christmas-calendar/static/media/svp-logo.a66ec1a1afefe0c570d6.webp",
     "index.html": "/svp-christmas-calendar/index.html",
     "main.cab8c6e2.css.map": "/svp-christmas-calendar/static/css/main.cab8c6e2.css.map",
-    "main.759ee575.js.map": "/svp-christmas-calendar/static/js/main.759ee575.js.map"
+    "main.fcbe861f.js.map": "/svp-christmas-calendar/static/js/main.fcbe861f.js.map"
   },
   "entrypoints": [
     "static/css/main.cab8c6e2.css",
-    "static/js/main.759ee575.js"
+    "static/js/main.fcbe861f.js"
   ]
 }
