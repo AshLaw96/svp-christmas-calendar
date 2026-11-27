@@ -1,5 +1,5 @@
 import day1Image from "../assets/images/1st.png";
-import day2Image from "../assets/images/2nd.png";
+import day2Image from "../assets/images/2nd.webp";
 import day3Image from "../assets/images/3rd.jpg";
 import day4Image from "../assets/images/4th.webp";
 import day5Image from "../assets/images/5th.png";
